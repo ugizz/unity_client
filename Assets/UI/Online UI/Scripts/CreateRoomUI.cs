@@ -19,6 +19,11 @@ public class CreateRoomUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        for (int i =0; i < crewImgs.Count; i++)
+        {
+            Material materialInstance = Instantiate(crewImgs[i].material);
+            crewImgs[i].material = materialInstance;
+        }
         roomData = new CreateGameRoomData() { imposterCount = 1, maxPlayerCount = 10};
         UpdateCrewImages();
     }
