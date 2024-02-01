@@ -1,0 +1,4 @@
+repository "make-the-among-us@ugizz@cloud"
+  path "/"
+    br "/main"
+    co "/main"

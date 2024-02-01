@@ -7,7 +7,7 @@ public enum EPlayerColor
     Red, Blue, Green,
     Pink, Orange, Yellow,
     Black, White, Purple,
-    Brown, Cyan, Lime
+    Brown, Cyan, Lime, Gray
 }
 public class PlayerColor : MonoBehaviour
 {
@@ -25,7 +25,8 @@ public class PlayerColor : MonoBehaviour
         new Color(0.6f, 0f, 0.6f),
         new Color(0.7f, 0.2f, 0f),
         new Color(0f, 1f, 1f),
-        new Color(0.1f, 1f, 0.1f)
+        new Color(0.1f, 1f, 0.1f),
+        new Color(0.5f, 0.5f, 0.5f)
 
     };
     public static Color GetColor(EPlayerColor playerColor) { return colors[(int)playerColor];}
@@ -40,4 +41,5 @@ public class PlayerColor : MonoBehaviour
     public static Color Brown { get { return colors[(int)EPlayerColor.Brown]; }}
     public static Color Cyan { get { return colors[(int)EPlayerColor.Cyan]; }}
     public static Color Lime { get { return colors[(int)EPlayerColor.Lime]; }}
+    public static Color Gray { get { return colors[(int)EPlayerColor.Gray]; }}
 }
